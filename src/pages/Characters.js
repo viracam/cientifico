@@ -2,7 +2,7 @@ const Character = () => {
     const view = `
     <div class="Charaters-inner">
         <article class="Character-card">
-            <img src="image" alt="name">
+            <img src="image.png" alt="name">
             <h2>Name</h2>
         </article>
         <article class="Charaters-card">

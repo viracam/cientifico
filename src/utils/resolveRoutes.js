@@ -4,6 +4,6 @@ const resolveRoutes = (route) => {
         return validRoute;
     }
     /*return route*/
-     return `${route}`; // about
+    return `${route}`; // about
 };
 export default resolveRoutes;
