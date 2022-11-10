@@ -4,9 +4,10 @@ const getData = async(id) =>{
     const apiURL = id ? `${API}${id}` : API;
     try{
         const response = await fetch(apiURL);
-        const data = await response.json;
+        const data = response.json();
         return data;
-    }catch (error) {
+    }
+    catch (error) {
         console.log('Fetch Error', error);
       };
 };

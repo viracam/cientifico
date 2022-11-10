@@ -17,7 +17,7 @@ const router = async () => {
     header.innerHTML = Header();
     let hash = getHash();
     let route = await resolveRoutes(hash);
-    let render = routes[route] ? routes[route]: Character || '/#/about' || Error404;
+    let render = routes[route] ? routes[route]: /*Character || '/#/about' ||*/ Error404;
 
     content.innerHTML = await render();
 };
