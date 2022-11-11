@@ -6,8 +6,7 @@ const Characters = async () => {
     const character = await getData(id);
     const view = `
     <div class="Charaters-inner">
-    ${Characters.results.map(character =>`
-        <article class="Character-card">
+        <article class="Characters-card">
             <img src="${character.image}" alt="${character.name}">
             <h2>${character.name}</h2>
         </article>
@@ -19,7 +18,7 @@ const Characters = async () => {
             <h3>Origin: <span>${character.origin.name}</span></h3>
             <h3>Last Location: <span>${character.location.name}</span></h3>
         </article>
-        `).join('')}
+    
     </div>`;
     return view;
 };
